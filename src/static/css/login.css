@@ -5,12 +5,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom right, #cccccc, #575757);
+  background: white;
+  font-family: sans-serif;
 }
 
 .taskbar {
-  background: rgb(45, 45, 45);
-  color: white;
+  background: white;
+  color: black;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
@@ -21,16 +22,18 @@ body {
   right: 0;
   z-index: 9999;
   backdrop-filter: blur(5px);
+  border-bottom: 1px solid black;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
-  color: white;
+  color: black;
   font-size: 24px;
   margin-right: auto;
 }
 
 .taskbar a {
-  color: white;
+  color: black;
   text-decoration: none;
   padding: 10px 15px;
   border-radius: 5px;
@@ -50,13 +53,14 @@ body {
 
 .login-box,
 .registration-box {
-  background: rgba(255, 255, 255, 0.7);
+  background: white;
   padding: 40px;
   border-radius: 12px;
   text-align: center;
-  color: #000;
+  color: black;
   width: 300px;
   transition: opacity 0.5s ease;
+  border: 1px solid black;
 }
 
 .login-box h2,
@@ -77,16 +81,18 @@ input[type="password"] {
 }
 
 input[type="submit"] {
-  background-color: #333;
-  color: #fff;
+  background-color: white;
+  color: black;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  border: 1px solid black; 
+  border-radius: 5px;
 }
 
 input[type="submit"]:hover {
-  background-color: #333;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .remember-me {

@@ -9,6 +9,7 @@
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+  border: 1px solid black;
 }
 .sectiune {
   padding: 10px;
