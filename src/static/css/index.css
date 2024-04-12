@@ -79,6 +79,10 @@ body {
     border-radius: 20px;
     background-color: rgb(13, 193, 225);
     color: white;
+    text-decoration: none;
+  }
+  .hero_button:hover {
+    background-color: #0cb1d444;
   }
 
   .content1{
