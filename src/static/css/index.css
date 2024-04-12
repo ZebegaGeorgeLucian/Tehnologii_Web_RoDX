@@ -79,6 +79,11 @@ body {
     border-radius: 20px;
     background-color: rgb(13, 193, 225);
     color: white;
+    text-decoration: none;
+
+  }
+  .hero_button:hover {
+    background-color: #0cb1d444; 
   }
 
   .content1{
@@ -161,18 +166,6 @@ body {
     text-align: center;
   }
   
-  .pill-container {
-    position: fixed;
-    left: 20px;
-    bottom: 20px;
-    z-index: 999;
-  }
-  
-  .pill-container img {
-    width: 200px;
-    height: auto;
-  }
-  
   .disclaimer {
     background-color: #5e5e5e;
     color: black;
@@ -205,3 +198,5 @@ body {
     margin-left: 10px;
   }
 
+
+  
