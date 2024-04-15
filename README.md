@@ -68,20 +68,27 @@ Utilizatorii pot consulta acest document pentru explicații detaliate despre fun
 Mai jos, puteți vedea o prezentare generală a fiecărei pagini a aplicației și funcționalităților pe care le oferă:
 ##### -Bara de navigație
  Aceasta reprezintă meniul de navigare către fiecare pagina a aplicației
+ ![bara navigatie](documentatie_images/bara-navigatie.png)
 ##### -Pagina de inregistrare
  Pagina de înregistrare (registration.html) este parte a aplicației "RoDX" și oferă utilizatorilor posibilitatea de a crea un cont nou în sistem. Interfața este simplă și intuitivă, concepută pentru a facilita procesul de înregistrare. Pagina conține două secțiuni principale: o secțiune pentru logare și o secțiune pentru înregistrare.
 
 În secțiunea de logare, utilizatorii pot introduce username-ul și parola pentru a accesa contul lor existent, iar opțiunea "Remember me" permite reținerea datelor de autentificare pentru acces rapid ulterior.
+![login page](documentatie_images/login-page.png)
 
 În secțiunea de înregistrare, utilizatorii trebuie să completeze un formular cu informațiile necesare pentru crearea unui cont nou. Formularul solicită nume, prenume, username, email și parolă, precum și confirmarea parolei. După completarea și trimiterea formularului, utilizatorii vor fi înregistrați în sistem și vor putea accesa toate funcționalitățile oferite de aplicația "RoDX".
+![register page](documentatie_images/register-page.png)
 ##### Pagina acasa
+![home page](documentatie_images/home-page.png)
 ##### Pagina de cautare
 În partea centrală a paginii, utilizatorii sunt întâmpinați cu un titlu sugestiv, care îi îndeamnă să selecteze filtrele dorite și să apeleze funcția de căutare pentru a genera harta cu datele relevante.
 
 Interfața de căutare este completată de două dropdown-uri (listele derulante) care permit utilizatorilor să selecteze anul și tipul de date pe care doresc să le vizualizeze. Anul poate fi ales din opțiunile disponibile, iar tipurile de date includ infracțiuni, capturi de droguri, urgențe medicale și campanii de prevenire a consumului de stupefiante.
 
 După ce utilizatorii selectează filtrele dorite, ei pot apăsa butonul "Search" pentru a iniția căutarea și a genera harta cu datele relevante.
+![search page](documentatie_images/search-page.png)
 ##### Pagina Despre
+
+![about page](documentatie_images/about-page.png)
 #### 3.2 Interfata Hardware
 Acest produs nu necesită interfețe hardware specifice și poate fi utilizat pe orice platformă, cum ar fi calculatoare, laptopuri, telefoane mobile etc., care are instalat un browser web.
 #### 3.3 Interfata Software
