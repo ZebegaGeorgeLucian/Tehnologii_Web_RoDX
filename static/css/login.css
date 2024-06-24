@@ -1,0 +1,333 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #809ecb, #2a5470);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+  position: relative;
+}
+
+.taskbar {
+  background: rgba(255, 255, 255, 0.8);
+  color: black;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  backdrop-filter: blur(5px);
+  border-bottom: 1px solid black;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  color: black;
+  font-size: 24px;
+  margin-right: auto;
+}
+
+.taskbar a {
+  color: black;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.taskbar a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.taskbar a, .dropbtn {
+  color: black;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.taskbar a:hover, .dropbtn:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Dropdown content styles */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.login-container {
+  position: relative;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login-box,
+.registration-box {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  color: black;
+  width: 300px;
+  transition: opacity 0.5s ease, display 0.5s ease;
+  border: 1px solid black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 1;
+}
+
+.login-box {
+  display: block;
+}
+
+.registration-box {
+  display: none;
+  opacity: 0;
+}
+
+.login-box h2,
+.registration-box h2 {
+  margin-top: 0;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  background: transparent;
+  color: #000;
+}
+
+input[type="submit"] {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid black;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.remember-me {
+  margin-top: 20px;
+  color: #000;
+}
+
+.register-link,
+.login-link {
+  color: #000;
+  text-decoration: none;
+}
+
+.register-link:hover,
+.login-link:hover {
+  text-decoration: underline;
+}
+
+.bubbles {
+  position: absolute;
+  display: flex;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.bubbles span {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  bottom: -100px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  animation: animate 20s linear infinite;
+}
+
+.bubbles span:nth-child(1) {
+  left: 10%;
+  width: 80px;
+  height: 80px;
+  animation-duration: 15s;
+  animation-delay: 2s;
+}
+
+.bubbles span:nth-child(2) {
+  left: 20%;
+  width: 20px;
+  height: 20px;
+  animation-duration: 10s;
+  animation-delay: 4s;
+}
+
+.bubbles span:nth-child(3) {
+  left: 25%;
+  width: 60px;
+  height: 60px;
+  animation-duration: 12s;
+  animation-delay: 6s;
+}
+
+.bubbles span:nth-child(4) {
+  left: 40%;
+  width: 20px;
+  height: 20px;
+  animation-duration: 18s;
+  animation-delay: 8s;
+}
+
+.bubbles span:nth-child(5) {
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-duration: 16s;
+  animation-delay: 10s;
+}
+
+.bubbles span:nth-child(6) {
+  left: 80%;
+  width: 80px;
+  height: 80px;
+  animation-duration: 20s;
+  animation-delay: 12s;
+}
+
+.bubbles span:nth-child(7) {
+  left: 32%;
+  width: 40px;
+  height: 40px;
+  animation-duration: 22s;
+  animation-delay: 14s;
+}
+
+.bubbles span:nth-child(8) {
+  left: 55%;
+  width: 50px;
+  height: 50px;
+  animation-duration: 24s;
+  animation-delay: 16s;
+}
+
+.bubbles span:nth-child(9) {
+  left: 25%;
+  width: 30px;
+  height: 30px;
+  animation-duration: 26s;
+  animation-delay: 18s;
+}
+
+.bubbles span:nth-child(10) {
+  left: 90%;
+  width: 60px;
+  height: 60px;
+  animation-duration: 28s;
+  animation-delay: 20s;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) scale(0);
+  }
+  100% {
+    transform: translateY(-1000px) scale(1);
+  }
+}
+
+/* Snackbar styles */
+#snackbar {
+  visibility: hidden; /* Hidden by default */
+  background-color: #333; /* Black background color */
+  color: #fff; /* White text color */
+  text-align: center; /* Centered text */
+  border-radius: 2px; /* Rounded borders */
+  padding: 16px; /* Padding */
+  position: fixed; /* Sit on top of the screen */
+  z-index: 1; /* Add a z-index if needed */
+  right: 30px; /* 30px from the right */
+  bottom: 30px; /* 30px from the bottom */
+  font-size: 17px; /* Increase font size */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+#snackbar.show {
+  visibility: visible; /* Show the snackbar */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s; /* Fade in and out */
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+#snackbar.info {
+  background-color: #2196F3; /* Blue background */
+}
+
+#snackbar.success {
+  background-color: #4CAF50; /* Green background */
+}
+
+#snackbar.error {
+  background-color: #f44336; /* Red background */
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
