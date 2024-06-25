@@ -1,3 +1,7 @@
+
+### Documentatie Componenta S -> https://docs.google.com/document/d/1r3HzfopL-vjJRqUmESP_Bemwfwsfd9OlACKDlp7EZYk/edit?usp=sharing
+
+
 # Tehnologii_Web_RoDX
 
 ### Cuprins
