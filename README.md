@@ -1,6 +1,6 @@
 
 ### Documentatie Componenta S -> https://docs.google.com/document/d/1r3HzfopL-vjJRqUmESP_Bemwfwsfd9OlACKDlp7EZYk/edit?usp=sharing
-
+## video - (video folder) / link -> https://drive.google.com/file/d/1wA2yLWjpYLGm4BDE-RMBoPL8_-y8xQhG/view?usp=sharing
 
 # Tehnologii_Web_RoDX
 
